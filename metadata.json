@@ -1,0 +1,6 @@
+{
+  "name": "Interactive CV",
+  "description": "A clean, professional interactive CV and portfolio for Lam Roza with real-time editing, print support, and multiple themes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
