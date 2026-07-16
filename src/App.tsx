@@ -123,6 +123,25 @@ export default function App() {
               parsed.personalInfo.photoUrl.startsWith("/src/assets/images/")) {
             parsed.personalInfo.photoUrl = defaultCVData.personalInfo.photoUrl;
           }
+          if (parsed.personalInfo.email2 === "lamroza2008suong@gmail.com" || !parsed.personalInfo.email2) {
+            parsed.personalInfo.email2 = "lamrozasuong2008@gmail.com";
+          }
+          if (parsed.personalInfo.phone2 === "096 262 1004") {
+            parsed.personalInfo.phone2 = "";
+          }
+        }
+        if (parsed.education && Array.isArray(parsed.education)) {
+          parsed.education = parsed.education.map((edu: any) => {
+            if (edu.id === "edu-2" || edu.institution === "Hun Sen Teuk Thla High School" || edu.institution === "Hun Sen Teuk Thla high school") {
+              return {
+                ...edu,
+                degree: "High School",
+                institution: "High School Somdech Techo Hun Sen Suong",
+                duration: "Graduated: 2025"
+              };
+            }
+            return edu;
+          });
         }
         return parsed;
       } catch (e) {
@@ -137,7 +156,7 @@ export default function App() {
     return (savedTheme as ThemeId) || 'clean_minimalism';
   });
 
-  const [showEditor, setShowEditor] = useState<boolean>(true);
+  const [showEditor, setShowEditor] = useState<boolean>(false);
   const [activeTab, setActiveTab] = useState<'info' | 'education' | 'skills' | 'projects' | 'languages' | 'links' | 'presets'>('info');
   const [hasSaved, setHasSaved] = useState<boolean>(false);
   

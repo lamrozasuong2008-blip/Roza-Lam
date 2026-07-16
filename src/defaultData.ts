@@ -13,9 +13,9 @@ export const defaultCVData: CVData = {
     name: "LAM ROZA",
     title: "Digital Economy Student & Aspiring Professional",
     phone1: "+855 88 494 1096",
-    phone2: "096 262 1004",
+    phone2: "",
     email1: "rozalam64@gmail.com",
-    email2: "lamroza2008suong@gmail.com",
+    email2: "lamrozasuong2008@gmail.com",
     address: "Street 2002, Teuk Thla, Sen Sok, Phnom Penh, Cambodia",
     summary: "Motivated and tech-savvy Digital Economy student with a strong foundation in modern business concepts and digital trends. Possesses exceptional interpersonal and communication skills, with a natural ability to confidently build rapport, trust, and positive relationships with new people. Quick to learn, highly adaptable, and eager to bring a strong work ethic and professional attitude to an entry-level role.",
     photoUrl: photoUrl,
@@ -31,9 +31,9 @@ export const defaultCVData: CVData = {
     },
     {
       id: "edu-2",
-      degree: "High School Diploma",
-      institution: "Hun Sen Teuk Thla High School",
-      duration: "Graduated: 2024",
+      degree: "High School",
+      institution: "High School Somdech Techo Hun Sen Suong",
+      duration: "Graduated: 2025",
       description: "Successfully completed secondary education with focus on general science and mathematics."
     }
   ],
